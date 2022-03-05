@@ -8,9 +8,9 @@ Selam {}
 
 Hoş Geldiniz {}
 
-Eğer bu bota güvenmiyorsanı! 
-1) bu iletiyi okumayı durdur
-2) bu sohbeti sil
+Eğer bu bota güvenmiyorsanız! 
+1) Bu iletiyi okumayı durdur. 
+2) Bu sohbeti silebilirsin.
 
 Hala okuyor musun?
 Pyrogram ve teleton dize oturumu oluşturmak için beni kullanabilirsin. Daha fazla bilgi edinmek için aşağıdaki düğmeleri kullanın! 
@@ -44,9 +44,9 @@ Pyrogram ve teleton dize oturumu oluşturmak için beni kullanabilirsin. Daha fa
 ✨ **Kullanılabilir Komutlar** ✨
 
 /about - Bot Hakkında
-/help - Bu İleti
+/help - Yardım bilgisi için tıkla
 /start - Botu Başlatma
-/generate - Oturum Oluşturmaya Başla
+/generate - Oturum Oluşturmaya Başlayın
 /cancel - İşlemi iptal et
 /restart - İşlemi iptal et
 """
