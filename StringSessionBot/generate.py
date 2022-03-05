@@ -86,7 +86,7 @@ async def generate_session(bot, msg, telethon=False):
         await msg.reply('OTP geçersiz. Lütfen oturumu yeniden oluşturmaya başlayın.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     except (PhoneCodeExpired, PhoneCodeExpiredError):
-        await msg.reply('OTP'nin süresi doldu. Lütfen oturumu yeniden oluşturmaya başlayın.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
+        await msg.reply('OTP süresi doldu. Lütfen oturumu yeniden oluşturmaya başlayın.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     except (SessionPasswordNeeded, SessionPasswordNeededError):
         try:
