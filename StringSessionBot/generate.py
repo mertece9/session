@@ -74,7 +74,7 @@ async def generate_session(bot, msg, telethon=False):
         if await cancelled(api_id_msg):
             return
     except TimeoutError:
-        await msg.reply('Time limit reached of 10 minutes. Please start generating session again.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
+        await msg.reply('Zaman sınırı 10 dakikaya ulaştı. Lütfen oturumu yeniden oluşturmaya başlayın.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     phone_code = phone_code_msg.text.replace(" ", "")
     try:
@@ -120,7 +120,7 @@ async def generate_session(bot, msg, telethon=False):
 
 async def cancelled(msg):
     if "/cancel" in msg.text:
-        await msg.reply("Cancelled the Process!", quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
+        await msg.reply("İşlem İptal Edildi!", quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return True
     elif "/restart" in msg.text:
         await msg.reply("Restarted the Bot!", quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
