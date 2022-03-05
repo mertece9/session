@@ -123,7 +123,7 @@ async def cancelled(msg):
         await msg.reply("İşlem İptal Edildi!", quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return True
     elif "/restart" in msg.text:
-        await msg.reply("Restarted the Bot!", quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
+        await msg.reply("Bot yeniden başlatıldı!", quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return True
     elif msg.text.startswith("/"):  # Bot Komutları
         await msg.reply("Oluşturma işlemi iptal edildi!", quote=True)
