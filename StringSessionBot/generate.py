@@ -25,7 +25,7 @@ from telethon.errors import (
 @Client.on_message(filters.private & ~filters.forwarded & filters.command('generate'))
 async def main(_, msg):
     await msg.reply(
-        "Please choose the python library you want to generate string session for",
+        "Lütfen dize oturumu oluşturmak istediğiniz python kitaplığını seçin",
         reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton("Pyrogram", callback_data="pyrogram"),
             InlineKeyboardButton("Telethon", callback_data="telethon")
@@ -34,7 +34,7 @@ async def main(_, msg):
 
 
 async def generate_session(bot, msg, telethon=False):
-    await msg.reply("Başlangıç {} Oturum Oluşturma...".format("Telethon" başka bir teleton ise "Pyrogram"))
+    await msg.reply("Başlangıç {} Oturum Oluşturma...".format("Telethon" if telethon else "Pyrogram"))
     user_id = msg.chat.id
     api_id_msg = await bot.ask(user_id, 'Lütfen `API_ID`', filters=filters.text)
     if await cancelled(api_id_msg):
