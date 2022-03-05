@@ -115,7 +115,7 @@ async def generate_session(bot, msg, telethon=False):
     except KeyError:
         pass
     await client.disconnect()
-    await phone_code_msg.reply("Başarıyla oluşturuldu {} dize oturumu. \n\nLütfen kayıtlı mesajlarınızı kontrol edin! \n\nTarafından @SohbetDestek".format("telethon" başka bir teleton ise "pyrogram"))
+    await phone_code_msg.reply("Başarıyla oluşturuldu {} dize oturumu. \n\nLütfen kayıtlı mesajlarınızı kontrol edin! \n\nTarafından @SohbetDestek".format("telethon" if telethon else "pyrogram"))
 
 
 async def cancelled(msg):
