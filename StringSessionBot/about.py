@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup
 
 
-# About Message
+# İleti Hakkında
 @Client.on_message(filters.private & filters.incoming & filters.command("about"))
 async def about(bot, msg):
     await bot.send_message(
