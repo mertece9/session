@@ -8,14 +8,14 @@ Selam {}
 
 Hoş Geldiniz {}
 
-Eğer bu bota güvenmiyorsanız, 
+Eğer bu bota güvenmiyorsanı! 
 1) bu iletiyi okumayı durdur
 2) bu sohbeti sil
 
 Hala okuyor musun?
-Pyrogram ve teleton dize oturumu oluşturmak için beni kullanabilirsin. Daha fazla bilgi edinmek için aşağıdaki düğmeleri kullanın !
+Pyrogram ve teleton dize oturumu oluşturmak için beni kullanabilirsin. Daha fazla bilgi edinmek için aşağıdaki düğmeleri kullanın! 
 
-Tarafından @BotdestekGrubu
+> @BotdestekGrubu Tarafından hazırlanmıştır. 
     """
 
     # Giriş Düğmesi
@@ -31,7 +31,7 @@ Tarafından @BotdestekGrubu
     # Rest Buttons
     buttons = [
         [InlineKeyboardButton("🔥 Oturum Oluşturmaya Başla 🔥", callback_data="generate")],
-        [InlineKeyboardButton("✨ Bot Durumu ve Daha Fazla Bot ✨", url="https://t.me/StarkBots/7")],
+        [InlineKeyboardButton("✨ Bot Durumu ve Daha Fazla Bot ✨", url="https://t.me/Sohbetdestek")],
         [
             InlineKeyboardButton("Nasıl Kullanılır ❔", callback_data="help"),
             InlineKeyboardButton("🎪 Hakkında 🎪", callback_data="about")
@@ -55,7 +55,7 @@ Tarafından @BotdestekGrubu
     ABOUT = """
 **Bu Bot Hakkında** 
 
-Tarafından pyrogram ve telethon dize oturumu oluşturmak için bir telgraf botu @BotdestekGrubu 
+@BotdestekGrubu Tarafından pyrogram ve telethon dize oturumu oluşturmak için bir telgraf botuyum. 
 
 Kaynak kodu : [Buraya Tıklayın](https://t.me/BotDestekGrubu)
 
