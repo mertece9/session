@@ -70,7 +70,7 @@ async def generate_session(bot, msg, telethon=False):
         await msg.reply('`PHONE_NUMBER` geçersiz. Lütfen oturumu yeniden oluşturmaya başlayın.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     try:
-        phone_code_msg = await bot.ask(user_id, "Lütfen resmi telgraf hesabında otp olup olmadığını kontrol edin. Aldıysanız, aşağıdaki formatı okuduktan sonra OTP'yi buraya gönderin. \nOTP ise `12345`, **lütfen birer boşluk bırak gönder** `1 2 3 4 5`.", filters=filters.text, timeout=600)
+        phone_code_msg = await bot.ask(user_id, "Lütfen resmi telgraf hesabında otp olup olmadığını kontrol edin. Aldıysanız, aşağıdaki formatı okuduktan sonra OTP yi buraya gönderin. \nOTP ise `12345`, **lütfen birer boşluk bırak gönder** `1 2 3 4 5`.", filters=filters.text, timeout=600)
         if await cancelled(api_id_msg):
             return
     except TimeoutError:
@@ -109,7 +109,7 @@ async def generate_session(bot, msg, telethon=False):
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = "**{} DIZE OTURUMU** \n\n`{}` \n\nOluşturan @BotdestekGrubu".format("TELETHON" başka bir teleton ise "PYROGRAM", string_session)
+    text = "**{} DIZE OTURUMU** \n\n`{}` \n\nOluşturan @BotdestekGrubu".format("TELETHON" if telethon else "PYROGRAM", string_session)
     try:
         await client.send_message("me", text)
     except KeyError:
