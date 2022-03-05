@@ -4,64 +4,64 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Hey {}
+Selam {}
 
-Welcome to {}
+Hoş Geldiniz {}
 
-If you don't trust this bot, 
-1) stop reading this message
-2) delete this chat
+Eğer bu bota güvenmiyorsanız, 
+1) bu iletiyi okumayı durdur
+2) bu sohbeti sil
 
-Still reading?
-You can use me to generate pyrogram and telethon string session. Use below buttons to learn more !
+Hala okuyor musun?
+Pyrogram ve teleton dize oturumu oluşturmak için beni kullanabilirsin. Daha fazla bilgi edinmek için aşağıdaki düğmeleri kullanın !
 
-By @StarkBots
+Tarafından @BotdestekGrubu
     """
 
-    # Home Button
+    # Giriş Düğmesi
     home_buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
+        [InlineKeyboardButton("🔥 Oturum Oluşturmaya Başla 🔥", callback_data="generate")],
+        [InlineKeyboardButton(text="🏠 Eve Dön 🏠", callback_data="home")]
     ]
 
     generate_button = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")]
+        [InlineKeyboardButton("🔥 Oturum Oluşturmaya Başla 🔥", callback_data="generate")]
     ]
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/StarkBots/7")],
+        [InlineKeyboardButton("🔥 Oturum Oluşturmaya Başla 🔥", callback_data="generate")],
+        [InlineKeyboardButton("✨ Bot Durumu ve Daha Fazla Bot ✨", url="https://t.me/StarkBots/7")],
         [
-            InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("🎪 About 🎪", callback_data="about")
+            InlineKeyboardButton("Nasıl Kullanılır ❔", callback_data="help"),
+            InlineKeyboardButton("🎪 Hakkında 🎪", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/StarkBots")],
+        [InlineKeyboardButton("♥ Daha Şaşırtıcı botlar ♥", url="https://t.me/BotDestekGrubu")],
     ]
 
     # Help Message
     HELP = """
-✨ **Available Commands** ✨
+✨ **Kullanılabilir Komutlar** ✨
 
-/about - About The Bot
-/help - This Message
-/start - Start the Bot
-/generate - Start Generating Session
-/cancel - Cancel the process
-/restart - Cancel the process
+/about - Bot Hakkında
+/help - Bu İleti
+/start - Botu Başlatma
+/generate - Oturum Oluşturmaya Başla
+/cancel - İşlemi iptal et
+/restart - İşlemi iptal et
 """
 
-    # About Message
+    # İleti Hakkında
     ABOUT = """
-**About This Bot** 
+**Bu Bot Hakkında** 
 
-A telegram bot to generate pyrogram and telethon string session by @StarkBots
+Tarafından pyrogram ve telethon dize oturumu oluşturmak için bir telgraf botu @BotdestekGrubu 
 
-Source Code : [Click Here](https://github.com/StarkBotsIndustries/StringSessionBot)
+Kaynak kodu : [Buraya Tıklayın](https://t.me/BotDestekGrubu)
 
 Framework : [Pyrogram](docs.pyrogram.org)
 
-Language : [Python](www.python.org)
+Dil : [Python](www.python.org)
 
-Developer : @StarkProgrammer
+Genel Ekip ve Botlar: @BotdestekGrubu
     """
