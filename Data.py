@@ -43,10 +43,10 @@ Pyrogram ve teleton dize oturumu oluşturmak için beni kullanabilirsin. Daha fa
     HELP = """
 ✨ **Kullanılabilir Komutlar** ✨
 
-/about - Bot Hakkında
+/about - Bot Hakkında Bilgi
 /help - Yardım bilgisi için tıkla
-/start - Botu Başlatma
-/generate - Oturum Oluşturmaya Başlayın
+/start - Botu Başlat
+/generate - Oturum Oluştur
 /cancel - İşlemi iptal et
 /restart - İşlemi iptal et
 """
