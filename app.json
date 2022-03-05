@@ -9,7 +9,7 @@
     "pyrogram"
   ],
     "buildpacks": [{
-    "url": "railway/python"
+    "url": "heroku/python"
   }],
   "formation": {
     "worker": {
@@ -22,7 +22,7 @@
          "options": {
             "version": "12"
          },
-         "plan": "postgres"
+         "plan": "heroku-postgresql"
       }
    ],
   "repository": "https://github.com/Mehmetbaba55/SessionBot",
