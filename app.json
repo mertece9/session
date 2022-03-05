@@ -22,7 +22,7 @@
          "options": {
             "version": "12"
          },
-         "plan": "heroku-postgresql"
+         "plan": "postgres"
       }
    ],
   "repository": "https://github.com/Mehmetbaba55/SessionBot",
