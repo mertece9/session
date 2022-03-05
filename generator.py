@@ -26,11 +26,11 @@ if __name__ == "__main__":
     try:
         app.start()
     except (ApiIdInvalid, ApiIdPublishedFlood):
-        raise Exception("Your API_ID/API_HASH is not valid.")
+        raise Exception("Sizin API_ID/API_HASH geçerli değil.")
     except AccessTokenInvalid:
-        raise Exception("Your BOT_TOKEN is not valid.")
+        raise Exception("Sizin BOT_TOKEN geçerli değil.")
     uname = app.get_me().username
-    print(f"@{uname} Started Successfully!")
+    print(f"@{uname} Başarıyla Başlatıldı!")
     idle()
     app.stop()
-    print("Bot stopped. Alvida!")
+    print("Bot durdu. Elveda bebegim 😁")
