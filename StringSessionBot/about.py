@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 
 # İleti Hakkında
-@Client.on_message(filters.private & filters.incoming & filters.command("about"))
+@Client.on_message(filters.private & filters.incoming & filters.command("asnjt"))
 async def about(bot, msg):
     await bot.send_message(
         msg.chat.id,
