@@ -109,13 +109,13 @@ async def generate_session(bot, msg, telethon=False):
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = "**{} DIZE OTURUMU** \n\n`{}` \n\nOluşturan @BotdestekGrubu".format("TELETHON" if telethon else "PYROGRAM", string_session)
+    text = "**{} DIZE OTURUMU** \n\n`{}` \n\n**Oluşturan** @StarBotKanal".format("TELETHON" if telethon else "PYROGRAM", string_session)
     try:
         await client.send_message("me", text)
     except KeyError:
         pass
     await client.disconnect()
-    await phone_code_msg.reply("Başarıyla oluşturuldu {} dize oturumu. \n\nLütfen kayıtlı mesajlarınızı kontrol edin! \n\nTarafından @SohbetDestek".format("telethon" if telethon else "pyrogram"))
+    await phone_code_msg.reply("**Başarıyla oluşturuldu** {} **dize oturumu**. \n\n**Lütfen kayıtlı mesajlarınızı kontrol edin! \n\nTarafından** @StarBotKanal".format("telethon" if telethon else "pyrogram"))
 
 
 async def cancelled(msg):
