@@ -19,10 +19,10 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"Katılmalısınız [this channel]({link}) Beni kullanmak için. Katıldıktan sonra yeniden deneyin!",
+                    f" [this channel]({link}) , **Beni kullanmak için Katılin **!",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("✨ Kanala Katıl ✨", url=link)]
+                        [InlineKeyboardButton("✅ Kanala Katıl ", url=link)]
                     ])
                 )
                 await msg.stop_propagation()
