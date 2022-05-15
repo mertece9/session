@@ -65,6 +65,6 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
 
 
 ERROR_MESSAGE = "Oops! Bir istisna oluştu! \n\n**Hata** : {} " \
-            "\n\nBu ileti herhangi bir ileti içermiyorsa lütfen @BotdestekGrubu ziyaret edin " \
+            "\n\nBu ileti herhangi bir ileti içermiyorsa lütfen @StarBotDestek ziyaret edin " \
             "hassas bilgiler ve bunu aşağıdaki gibi bildirmek isterseniz" \
             "Bu hata iletisi bizim için günlüğe kaydedilmiyor!"
