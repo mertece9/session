@@ -3,30 +3,31 @@ from pyrogram.types import InlineKeyboardButton
 
 class Data:
     # Start Message
-    START = """**
-Selam {}
+    START = """
+» **Merhaba** {}
 
-Hoş Geldiniz {}
+• **Hoş Geldiniz** {}
 
-Pyrogram ve teleton dize oturumu oluşturmak için beni kullanabilirsin. Daha fazla bilgi edinmek için aşağıdaki düğmeleri kullanın! 
+• **Pyrogram ve teleton dize oturumu oluşturmak için beni kullanabilirsin. Daha fazla bilgi edinmek için aşağıdaki düğmeleri kullanın** ! 
 
-> @StarBotKanal Tarafından hazırlanmıştır. 
+»» @StarBotKanal **Tarafından hazırlanmıştır** . 
     """
 
     # Giriş Düğmesi
     home_buttons = [
-        [InlineKeyboardButton("✅ Oturum Oluşturmaya Başla ", callback_data="generate")],
+        [InlineKeyboardButton("✅ 𝖮𝗍𝗎𝗋𝗎𝗆 𝖮𝗅𝗎𝗌𝗍𝗎𝗋𝗆𝖺𝗒𝖺 𝖡𝖺𝗌𝗅𝖺 ", callback_data="generate")],
         [InlineKeyboardButton(text="< Geri >", callback_data="home")]
     ]
 
     generate_button = [
-        [InlineKeyboardButton("✅ Oturum Oluşturmaya Başla ", callback_data="generate")]
+        [InlineKeyboardButton("✅ 𝖮𝗍𝗎𝗋𝗎𝗆 𝖮𝗅𝗎𝗌𝗍𝗎𝗋𝗆𝖺𝗒𝖺 𝖡𝖺𝗌𝗅𝖺 ", callback_data="generate")]
     ]
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("✅ Oturum Oluşturmaya Başla ", callback_data="generate")],
-        [InlineKeyboardButton("🇹🇷 Resmi Kanal", url="https://t.me/StarBotKanal")],
+        [InlineKeyboardButton("✅ 𝖮𝗍𝗎𝗋𝗎𝗆 𝖮𝗅𝗎𝗌𝗍𝗎𝗋𝗆𝖺𝗒𝖺 𝖡𝖺𝗌𝗅𝖺 ", callback_data="generate")],
+        [InlineKeyboardButton("🇹🇷 𝖱𝖾𝗌𝗆𝗂 𝖪𝖺𝗇𝖺𝗅", url="https://t.me/StarBotKanal"),
+         InlineKeyboardButton("🧑🏻‍💻 ㅤ𝖮𝗐𝗇𝖾𝗋ㅤ 🧑🏻‍💻", url="https://t.me/ByWolk")]
     ]
 
     # Help Message
