@@ -27,7 +27,7 @@ class Data:
     buttons = [
         [InlineKeyboardButton("✅ 𝖮𝗍𝗎𝗋𝗎𝗆 𝖮𝗅𝗎𝗌𝗍𝗎𝗋𝗆𝖺𝗒𝖺 𝖡𝖺𝗌𝗅𝖺 ", callback_data="generate")],
         [InlineKeyboardButton("🇹🇷 𝖱𝖾𝗌𝗆𝗂 𝖪𝖺𝗇𝖺𝗅", url="https://t.me/StarBotKanal"),
-         InlineKeyboardButton("🧑🏻‍💻 ㅤ𝖮𝗐𝗇𝖾𝗋ㅤ 🧑🏻‍💻", url="https://t.me/ByWolk")]
+         InlineKeyboardButton("🧑🏻‍💻 ㅤ𝖮𝗐𝗇𝖾𝗋ㅤ 🧑🏻‍💻", url="https://t.me/Hayiboo")]
     ]
 
     # Help Message
